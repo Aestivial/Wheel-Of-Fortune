@@ -12,7 +12,7 @@ def nextpress():
     T.insert(END,Content)
     return
 
-datab = open("C:\\Users\\nayan\\Documents\\Python programs\\Personal Use\\WheelOfFortune\\Database\\ListOfPrizes.txt",'r')
+datab = open("Database\\ListOfPrizes.txt",'r')
 data = datab.readlines()
 datab.close()
 
