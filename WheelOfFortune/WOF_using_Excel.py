@@ -4,6 +4,7 @@ from time import sleep
 from tkinter import *
 import random
 from tkinter.font import BOLD
+import pandas as pd
 
 def nextpress():
     global count
@@ -23,10 +24,9 @@ def flash(self):
     bg = self.cget("background")
     fg = self.cget("foreground")
     self.configure(background=fg, foreground=bg)
-    
-datab = open("Database\\ListOfPrizes.txt",'r')
-data = datab.readlines()
-datab.close()
+
+data = pd.read_excel('Database\\ListOfItems.xlsx',sheet_name='Prizes')
+data = data['Prizes'].tolist()
 
 #Driver Code
 if __name__=="__main__":
