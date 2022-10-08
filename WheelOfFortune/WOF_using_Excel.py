@@ -47,7 +47,7 @@ if __name__=="__main__":
 
     Content = random.choice(data)
     count=0
-    Next=Button(gui, text="Next", fg="blue", command=nextpress).pack(pady=20)
+    Next=Button(gui, text="Start", fg="blue", command=nextpress).pack(pady=20)
 
     Close=Button(gui, text="Close", fg="red", command=gui.destroy).pack()
 
