@@ -45,7 +45,7 @@ if __name__=="__main__":
     T = Text(gui, bg="#06283D", fg="#9CFF2E", height=5, width=52, font=14)
     T.pack()
 
-    Content = random.choice(data)
+    Content = "Click on START to draw a prize:"
     count=0
     Next=Button(gui, text="Start", fg="blue", command=nextpress).pack(pady=20)
 
