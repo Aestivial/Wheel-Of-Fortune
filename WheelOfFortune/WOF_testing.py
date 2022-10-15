@@ -1,7 +1,7 @@
 import openpyxl
 import pandas as pd
 
-f=open("Database//ListOfItems.txt","w")
+f=open("Database//ListOfPrizes.txt","w")
 new=[]
 while True:
     new.append(input("Enter new prize: "))
