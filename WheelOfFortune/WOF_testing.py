@@ -1,6 +1,7 @@
 import openpyxl
 import pandas as pd
 
+f=open("Database//ListOfItems.txt","w")
 new=[]
 while True:
     new.append(input("Enter new prize: "))
@@ -9,6 +10,7 @@ while True:
         break
     else:
         continue
+file.writelines(new)
 
 d = pd.DataFrame(new)
 d.to_excel('woftest.xlsx', sheet_name='Sheet1',index=False, header=False)
