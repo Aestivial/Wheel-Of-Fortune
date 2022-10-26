@@ -31,8 +31,9 @@ def addwindow():
     aw.geometry("400x200")
     l=Label(aw, text="Enter the new items to add to the list", font=("Courier", 10, BOLD))
     l.pack()
-    t=Text(aw, height=9, width=50, bg="powder blue").pack()
+    t=Text(aw, height=5, width=50, bg="powder blue").pack()
     add = Button(aw, text = 'Add To List', command = addtolist).pack(pady=5)
+    close=Button(aw, text="Close", fg="red", command=aw.destroy).pack(pady=5)
 
 def addtolist():
     global t
