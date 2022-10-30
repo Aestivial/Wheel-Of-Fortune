@@ -16,3 +16,5 @@ The fetching of data for the prize items is carried out in two ways:
 [ UPDATE ]
 Now the updated GUI also supports adding new prizes to the existing list in the excel sheet. At one time, a user may enter n number of prizes and have it dumped in the ListOfPrizes.xlsx file via the program.
 ![image](https://user-images.githubusercontent.com/69592060/198699210-0e3007b1-f50b-49d9-bf71-c429c20fd342.png)
+
+Selecting the "Add New Items" option prompts the user with a new window where new items can be added in separate lines. The new items are then added to the existing database.
